@@ -1,0 +1,28 @@
+/* styles.css */
+.main-layout {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav {
+    /* styles for your navigation bar */
+  }
+  
+  .content-area {
+    display: flex;
+  }
+  
+  aside {
+    /* styles for your sidebar */
+    width: 25%; /* Adjust the width as necessary */
+  }
+  
+  main {
+    width: 75%; /* Adjust the width based on sidebar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Add media queries for responsive design */
+  
