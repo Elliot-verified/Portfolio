@@ -4,9 +4,6 @@
     flex-direction: column;
   }
   
-  nav {
-    /* styles for your navigation bar */
-  }
   
   .content-area {
     display: flex;
@@ -14,7 +11,7 @@
   
   aside {
     /* styles for your sidebar */
-    width: 25%; /* Adjust the width as necessary */
+    width: 50%; /* Adjust the width as necessary */
   }
   
   main {
@@ -24,5 +21,64 @@
     align-items: center;
   }
   
-  /* Add media queries for responsive design */
+/* Navigation bar styling */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* This separates the logo and the links */
+    padding: 1rem;
+    background-color: transparent; /* Remove the background color */
+  }
+  
+  /* Styling for the 'Elliot Waxman' link */
+  nav .home-link {
+    margin-left: 4rem;
+    text-decoration: none;
+    color: #333; /* Dark grey text */
+    font-weight: bold;
+  }
+  
+  /* Container for the rest of the navigation links */
+  .nav-links {
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    flex-grow: 1; /* Allows the container to take up available space */
+  }
+  
+  /* Navigation link styling */
+  .nav-links a {
+    text-decoration: none;
+    color: #333; /* Dark grey text */
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    background-color: transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover and active state styling */
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #007bff; /* Blue text for active/hover state */
+    background-color: transparent;
+    border-bottom: 2px solid #007bff; /* Adds an underline effect */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      width: 100%; /* Full width to stack the links vertically */
+      justify-content: flex-start; /* Align links to the start on smaller screens */
+    }
+  
+    .nav-links a {
+      margin: 0.5rem 0;
+      width: 100%; /* Full width for each link to expand to container width */
+    }
+  }
   

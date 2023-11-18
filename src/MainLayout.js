@@ -1,12 +1,12 @@
 // MainLayout.js
 import Navigation from './Navigation';
-import Sidebar from './Sidebar';
+// import Sidebar from './Sidebar';
 
 const MainLayout = ({ children }) => (
   <div className="main-layout">
     <Navigation />
     <div className="content-area">
-      <Sidebar />
+      {/* <Sidebar /> */}
       <main>{children}</main>
     </div>
   </div>

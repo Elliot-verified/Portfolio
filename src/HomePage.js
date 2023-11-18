@@ -1,7 +1,8 @@
 // HomePage.js
+import Sidebar from "./Sidebar";
 const HomePage = () => (
     <div>
-      Hello World
+      <Sidebar />
     </div>
   );
   

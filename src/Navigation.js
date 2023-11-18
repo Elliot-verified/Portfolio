@@ -2,12 +2,15 @@
 import { NavLink } from 'react-router-dom';
 
 const Navigation = () => (
-  <nav>
-    <NavLink to="/">Home</NavLink>
-    <NavLink to="/bookshelf">Bookshelf</NavLink>
-    <NavLink to="/writing">Writing</NavLink>
-    <NavLink to="/contact">Contact</NavLink>
+    <nav>
+    <NavLink to="/" className="home-link">Elliot Waxman</NavLink>
+    <div className="nav-links">
+      <NavLink to="/bookshelf">Bookshelf</NavLink>
+      <NavLink to="/writing">Writing</NavLink>
+      <NavLink to="/contact">Contact</NavLink>
+    </div>
   </nav>
+  
 );
 
 export default Navigation;
