@@ -2,29 +2,40 @@ import React, { useState, useEffect } from 'react';
 
 function Highlights() {
   const [highlights, setHighlights] = useState([]);
+  const [isLoading, setIsLoading] = useState(true); // Added loading state
 
-useEffect(() => {
-    // Fetch highlights from the last week
+  useEffect(() => {
     fetch('/api/readwise')
       .then(response => response.json())
       .then(data => {
-        // Assume 'results' contains your highlights and you've filtered by date on the server
-        setHighlights(data.results);
+        console.log('Data fetched from /api/readwise:', data); // Log the data
+        if (data && data.results) { // Check if 'results' is in the data
+          setHighlights(data.results);
+        } else {
+          console.error('Unexpected data structure:', data);
+        }
       })
       .catch(error => {
         console.error('Error fetching data: ', error);
-      });
+      })
+      .finally(() => setIsLoading(false)); // Update loading state
   }, []);
-  // The empty array ensures this effect runs only once after the initial render
+
+  if (isLoading) {
+    return <div>Loading highlights...</div>; // Display loading message
+  }
 
   return (
     <div>
-      {highlights.map((highlight, index) => (
-        <div key={index}>
-          {/* Render your highlight data here */}
-          <p>{highlight.text}</p>
-        </div>
-      ))}
+      {highlights.length > 0 ? ( // Check if there are highlights
+        highlights.map((highlight, index) => (
+          <div key={index}>
+            <p>{highlight.text}</p> {/* Ensure 'text' is the correct property */}
+          </div>
+        ))
+      ) : (
+        <div>No highlights found</div> // Display message if no highlights
+      )}
     </div>
   );
 }
