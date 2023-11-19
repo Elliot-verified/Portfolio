@@ -1,7 +1,8 @@
 // BookShelf.js
+import Highlights from "./Highlights";
 const BookShelf = () => (
     <div>
-      Test
+      <Highlights/>
     </div>
   );
   
