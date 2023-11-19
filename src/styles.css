@@ -34,7 +34,7 @@ nav {
   nav .home-link {
     margin-left: 4rem;
     text-decoration: none;
-    color: #333; /* Dark grey text */
+    color:#007bff; /* Dark grey text */
     font-weight: bold;
   }
   
