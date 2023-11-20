@@ -29,9 +29,12 @@ function Highlights() {
     <div>
       {highlights.length > 0 ? (
         highlights.map((highlight, index) => (
-          <div key={index}>
-            <p>{highlight.title}</p> {/* Use the correct property here */}
-            {/* Add more details as needed */}
+          <div key={index} className="highlight-box">
+            <h2>{highlight.title}</h2>
+            <p><strong>Author:</strong> {highlight.author}</p>
+            <p><strong>Source:</strong> {highlight.source}</p>
+            <a href={highlight.link} target="_blank" rel="noopener noreferrer">Read Article</a>
+            <p>{highlight.first_highlight}</p>
           </div>
         ))
       ) : (
@@ -39,6 +42,7 @@ function Highlights() {
       )}
     </div>
   );
+  
 }
 
 export default Highlights;

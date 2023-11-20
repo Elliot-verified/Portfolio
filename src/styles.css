@@ -82,3 +82,27 @@ nav {
     }
   }
   
+  .highlight-box {
+    background-color: #f9f9f9; /* Light grey background */
+    border: 1px solid #ddd; /* Grey border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin-bottom: 20px; /* Space between boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .highlight-box h2 {
+    margin-top: 0;
+  }
+  
+  .highlight-box a {
+    color: #007bff; /* Standard link color */
+    text-decoration: none; /* Removes underline from links */
+  }
+  
+  .highlight-box a:hover {
+    text-decoration: underline; /* Adds underline on hover for links */
+  }
+  
+  /* Add any additional styles as needed */
+  

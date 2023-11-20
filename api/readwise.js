@@ -8,6 +8,7 @@ module.exports = async (req, res) => {
       method: 'GET',
       headers: {
         Authorization: `Token ${READWISE_TOKEN}`,
+        // Authorization: 'Token 8RMFBvy4QmjhMDfgqgx5evcJIJPBTqd3drfEU0SzK01u8xh9Cr'
       },
     });
     const data = await response.json();
