@@ -102,4 +102,12 @@ nav {
   }
 
   
+  .gif-container {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 150px; /* or whatever size you want */
+    height: auto;
+    z-index: 1000; /* to ensure it's above other elements */
+  }
   

@@ -31,8 +31,7 @@ function Highlights() {
         highlights.map((highlight, index) => (
           <div key={index} className="highlight-box">
             <h3>{highlight.title}</h3>
-            <p><strong>Author:</strong> {highlight.author}</p>
-            <p><strong>Date:</strong> {highlight.highlighted_at}</p>
+            <p><strong>Source:</strong> {highlight.author}</p>
             <a href={highlight.source_url} target="_blank" rel="noopener noreferrer">Read Article</a>
           </div>
         ))

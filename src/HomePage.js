@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar";
 const HomePage = () => (
     <div>
       <Sidebar />
-      <Gif/>
+      <Gif />
     </div>
   );
   
