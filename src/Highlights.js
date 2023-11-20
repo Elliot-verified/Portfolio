@@ -26,15 +26,15 @@ function Highlights() {
   }
 
   return (
-    <div>
+    <div className='highlights-container'>
       {highlights.length > 0 ? (
         highlights.map((highlight, index) => (
           <div key={index} className="highlight-box">
             <h2>{highlight.title}</h2>
             <p><strong>Author:</strong> {highlight.author}</p>
-            <p><strong>Source:</strong> {highlight.source}</p>
-            <a href={highlight.link} target="_blank" rel="noopener noreferrer">Read Article</a>
-            <p>{highlight.first_highlight}</p>
+            <p><strong>Highlight:</strong> {highlight.text}</p>
+            <a href={highlight.source_url} target="_blank" rel="noopener noreferrer">Read Article</a>
+            <p>{highlight.text}</p>
           </div>
         ))
       ) : (
