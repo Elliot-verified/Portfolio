@@ -2,6 +2,7 @@
 .main-layout {
     display: flex;
     flex-direction: column;
+
   }
   
   
@@ -61,7 +62,6 @@ nav {
   .nav-links a.active {
     color: #007bff; /* Blue text for active/hover state */
     background-color: transparent;
-    border-bottom: 2px solid #007bff; /* Adds an underline effect */
   }
   
   /* Responsive adjustments */
@@ -102,12 +102,14 @@ nav {
   }
 
   
-  .gif-container {
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    width: 150px; /* or whatever size you want */
-    height: auto;
-    z-index: 1000; /* to ensure it's above other elements */
+  .tree-image {
+    width: 500px; /* Increase width to 300px or any other value */
+    height: auto; /* Height will scale proportionally */
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 10;
   }
+  
+  
   

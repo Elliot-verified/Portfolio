@@ -2,8 +2,8 @@
 
 const Gif = () => (
     <div>
-        <div class="gif-container"><iframe src="https://giphy.com/embed/VelNwCyt725ToQAnrJ"></iframe></div>
+      <div className="tree-image"><img src="/tree.png" alt="tree img" /></div>
     </div>
-);
-  export default Gif;
+  );
   
+  export default Gif;
