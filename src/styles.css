@@ -5,20 +5,20 @@
 
   }
   
-  
   .content-area {
     display: flex;
   }
   
   aside {
     /* styles for your sidebar */
-    width: 50%; /* Adjust the width as necessary */
+    width: 50%;
   }
   
   main {
-    width: 75%; /* Adjust the width based on sidebar */
+    width: 100%; /* Adjust the width based on sidebar */
     display: flex;
-    justify-content: center;
+    margin-left: 200px;
+    margin-top: 100px;
     align-items: center;
   }
   
@@ -103,13 +103,12 @@ nav {
 
   
   .tree-image {
-    width: 500px; /* Increase width to 300px or any other value */
-    height: auto; /* Height will scale proportionally */
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    z-index: 10;
+    width: 500px;  /* Increase the width to 500px or your desired size */
+    height: auto; /* Height will be set automatically to maintain aspect ratio */
+    position: fixed; /* Fixed position relative to the viewport */
+    right: 0; /* Align to the far right of the viewport */
+    bottom: 0; /* Align to the bottom of the viewport */
+    z-index: 100; /* Ensure it is above other content but not too high to interfere with other interactive elements */
   }
-  
   
   
