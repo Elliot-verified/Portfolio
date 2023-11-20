@@ -3,6 +3,7 @@ import React from 'react';
 import './styles.css';
 import './Sidebar.css';
 import MainLayout from './MainLayout';
+import Projects from './Projects'
 import Contact from './Contact';
 import HomePage from './HomePage';
 import Writing from './Writing';
@@ -15,6 +16,7 @@ const App = () => (
     <MainLayout>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path='/Projects' element= {<Projects />}/>
         <Route path='/BookShelf' element= {<BookShelf />}/>
         <Route path='/Writing' element= {<Writing />}/>
         <Route path='/Contact' element= {<Contact />}/>
