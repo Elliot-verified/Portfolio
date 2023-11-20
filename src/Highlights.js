@@ -27,14 +27,15 @@ function Highlights() {
 
   return (
     <div>
-      {highlights.length > 0 ? ( // Check if there are highlights
+      {highlights.length > 0 ? (
         highlights.map((highlight, index) => (
           <div key={index}>
-            <p>{highlight.text}</p> {/* Ensure 'text' is the correct property */}
+            <p>{highlight.title}</p> {/* Use the correct property here */}
+            {/* Add more details as needed */}
           </div>
         ))
       ) : (
-        <div>No highlights found</div> // Display message if no highlights
+        <div>No highlights found</div>
       )}
     </div>
   );
