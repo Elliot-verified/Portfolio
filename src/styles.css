@@ -11,7 +11,8 @@
   main {
     width: 50%; /* Adjust the width based on sidebar */
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    margin-left: 20%;
     align-items: center;
   }
 
@@ -19,6 +20,36 @@
     width: 200px;
     height: auto;
     position: relative;
+  }
+  
+
+  aside {
+    font-size: 1.2rem; /* Larger text */
+    margin-left: 10%;
+    color: #666; /* Grayer text */
+    line-height: 1.6; /* Improved readability */
+    max-width: 100%; /* Maximum width of the sidebar content */
+  }
+  
+  /* If you have headings in your sidebar, you may want to style them too */
+  aside h1, aside h2, aside h3 {
+    color: #333; /* Darker color for headings */
+    margin-top: 1rem;
+  }
+  
+  /* For links in the sidebar, you may want to add some styling as well */
+  aside a {
+    color: #007bff; /* Standard link color */
+    text-decoration: none; /* Removes underline from links */
+  }
+  
+  aside a:hover {
+    text-decoration: underline; /* Adds underline on hover for links */
+  }
+  
+  /* You can also style paragraphs if needed */
+  aside p {
+    margin-bottom: 1rem; /* Space between paragraphs */
   }
   
 /* Navigation bar styling */

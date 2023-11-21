@@ -1,7 +1,6 @@
 // App.js
 import React from 'react';
 import './styles.css';
-import './Sidebar.css';
 import MainLayout from './MainLayout';
 import Projects from './Projects'
 import Contact from './Contact';
