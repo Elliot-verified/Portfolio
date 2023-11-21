@@ -4,8 +4,8 @@ import Highlights from "./Highlights";
 const BookShelf = () => (
     <div>
         <h2>What I've Read</h2>
-      <Highlights/>
-      <Gif/>
+          <Highlights/>
+          <Gif/>
     </div>
   );
   

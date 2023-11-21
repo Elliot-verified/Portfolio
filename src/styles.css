@@ -1,142 +1,28 @@
 /* styles.css */
-  .main-layout {
-      display: flex;
-      flex-direction: column;
-  
-    }
-    
-    .content-area {
-      display: flex;
-    }
-    
-    aside {
-      /* styles for your sidebar */
-      width: 80%;
-    }
-    
-    main {
-      width: 80%; /* Adjust the width based on sidebar */
-      display: flex;
-      margin-left: 30px;
-      margin-top: 30px;
-      align-items: center;
-    }
-    
-  /* Navigation bar styling */
-    nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between; /* This separates the logo and the links */
-      padding: 1rem;
-      background-color: transparent; /* Remove the background color */
-    }
-    
-    /* Styling for the 'Elliot Waxman' link */
-    nav .home-link {
-      margin-left: 1rem;
-      text-decoration: none;
-      color:#007bff; /* Dark grey text */
-      font-weight: bold;
-    }
-    
-    /* Container for the rest of the navigation links */
-    .nav-links {
-      display: flex;
-      justify-content: center; /* Center the navigation links */
-      flex-grow: 1; /* Allows the container to take up available space */
-    }
-    
-    /* Navigation link styling */
-    .nav-links a {
-      text-decoration: none;
-      color: #333; /* Dark grey text */
-      padding: 0.5rem 1rem;
-      margin: 0 0.5rem;
-      background-color: transparent;
-      border-radius: 4px;
-      transition: all 0.3s ease;
-    }
-    
-    /* Hover and active state styling */
-    .nav-links a:hover,
-    .nav-links a.active {
-      color: #007bff; /* Blue text for active/hover state */
-      background-color: transparent;
-    }
-    
-    /* Responsive adjustments */
-    
-      nav {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    
-      .nav-links {
-        width: 100%; /* Full width to stack the links vertically */
-        justify-content: flex-start; /* Align links to the start on smaller screens */
-      }
-    
-      .nav-links a {
-        margin: 0.5rem 0;
-        width: 100%; /* Full width for each link to expand to container width */
-      }
-    
-    /* Container for all highlights */
-    .highlights-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center; /* Centers the boxes horizontally */
-      max-width: 600px; /* Adjust the max-width as needed */
-      margin: 0 auto; /* Centers the container in the middle of the page */
-    }
-    
-    .highlight-box {
-      background-color: #f9f9f9; /* Light grey background */
-      border: 1px solid #ddd; /* Grey border */
-      border-radius: 8px; /* Rounded corners */
-      padding: 20px; /* Padding inside the box */
-      margin-bottom: 20px; /* Space between boxes */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-      width: 100%; /* Boxes will fill the container width */
-    }
-  
-    
-    .gif {
-      display:hidden;
-    }
-    
-    .project-container {
-      margin-left: 30px;
-    }
-/* Large screens (desktops) */
-@media screen and (min-width: 1024px) {
-  
-
 .main-layout {
     display: flex;
     flex-direction: column;
-
   }
   
   .content-area {
     display: flex;
   }
   
-  aside {
-    /* styles for your sidebar */
-    width: 50%;
-  }
-  
   main {
-    width: 100%; /* Adjust the width based on sidebar */
+    width: 50%; /* Adjust the width based on sidebar */
     display: flex;
-    margin-left: 200px;
-    margin-top: 100px;
+    justify-content: center;
     align-items: center;
+  }
+
+  .tree-image {
+    width: 200px;
+    height: auto;
+    position: relative;
   }
   
 /* Navigation bar styling */
-  nav {
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between; /* This separates the logo and the links */
@@ -146,9 +32,8 @@
   
   /* Styling for the 'Elliot Waxman' link */
   nav .home-link {
-    margin-left: 4rem;
     text-decoration: none;
-    color:#007bff; /* Dark grey text */
+    color: #333; /* Dark grey text */
     font-weight: bold;
   }
   
@@ -176,55 +61,3 @@
     color: #007bff; /* Blue text for active/hover state */
     background-color: transparent;
   }
-  
-  /* Responsive adjustments */
-  @media (max-width: 600px) {
-    nav {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .nav-links {
-      width: 100%; /* Full width to stack the links vertically */
-      justify-content: flex-start; /* Align links to the start on smaller screens */
-    }
-  
-    .nav-links a {
-      margin: 0.5rem 0;
-      width: 100%; /* Full width for each link to expand to container width */
-    }
-  }
-  
-  /* Container for all highlights */
-  .highlights-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers the boxes horizontally */
-    max-width: 600px; /* Adjust the max-width as needed */
-    margin: 0 auto; /* Centers the container in the middle of the page */
-  }
-  
-  .highlight-box {
-    background-color: #f9f9f9; /* Light grey background */
-    border: 1px solid #ddd; /* Grey border */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Padding inside the box */
-    margin-bottom: 20px; /* Space between boxes */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    width: 100%; /* Boxes will fill the container width */
-  }
-
-  
-  .tree-image {
-    width: 500px;  /* Increase the width to 500px or your desired size */
-    height: auto; /* Height will be set automatically to maintain aspect ratio */
-    position: fixed; /* Fixed position relative to the viewport */
-    right: 0; /* Align to the far right of the viewport */
-    bottom: 0; /* Align to the bottom of the viewport */
-    z-index: 100; /* Ensure it is above other content but not too high to interfere with other interactive elements */
-  }
-  
-  .project-container {
-    margin-left: 30px;
-  }
-}
