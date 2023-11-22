@@ -92,3 +92,45 @@ nav {
     color: #007bff; /* Blue text for active/hover state */
     background-color: transparent;
   }
+
+  /* Highlights container styles */
+.highlights-container {
+  display: grid; /* Using grid layout for better control */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates as many columns as can fit, with a minimum width of 300px */
+  gap: 1rem; /* Space between grid items */
+  padding: 1rem; /* Padding around the entire container */
+}
+
+/* Individual highlight box styles */
+.highlight-box {
+  background-color: #f9f9f9; /* Light grey background */
+  border: 1px solid #ddd; /* Grey border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 1.5rem; /* Padding inside the box */
+  margin-bottom: 1rem; /* Space between boxes, if they stack vertically */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: box-shadow 0.3s ease; /* Transition for box shadow on hover */
+}
+
+/* Highlight title styles */
+.highlight-box h3 {
+  color: #333; /* Dark grey text */
+  margin-bottom: 0.5rem; /* Space between title and content */
+}
+
+/* Highlight author/source styles */
+.highlight-box p {
+  color: #666; /* Lighter grey text */
+  margin-bottom: 1rem; /* Space between source and link */
+}
+
+/* Styles for the 'Read Article' link */
+.highlight-box a {
+  text-decoration: none; /* Remove underline */
+  color: #007bff; /* Theme color for links */
+  background-color: transparent; /* No background color */
+  padding: 0.5rem 1rem; /* Padding around the link for better touch targets */
+  border-radius: 4px; /* Rounded corners for the link */
+  transition: background-color 0.3s ease; /* Transition for background color on hover */
+}
+
