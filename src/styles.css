@@ -1,139 +1,192 @@
-/* styles.css */
+/* styles.css - Main layout styles */
 .main-layout {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .content-area {
-    display: flex;
-  }
-  
-  main {
-    width: 50%; /* Adjust the width based on sidebar */
-    display: flex;
-    justify-content: start;
-    margin-left: 20%;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .tree-image {
-    width: 100px; /* Or whatever size you want */
-    height: auto; /* To maintain the aspect ratio */
-    position: fixed; /* Fixed position relative to the viewport */
-    right: 200px; /* 10 pixels from the right edge of the viewport */
-    bottom: 10px; /* 10 pixels from the bottom edge of the viewport */
-    z-index: 10; /* Ensure it's above other content, adjust if necessary */
-  }
-  
-  
+.content-area {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
 
-  aside {
-    font-size: 1.2rem; /* Larger text */
-    color: #666; /* Grayer text */
-    line-height: 1.6; /* Improved readability */
-    max-width: 100%; /* Maximum width of the sidebar content */
-  }
-  
-  /* If you have headings in your sidebar, you may want to style them too */
-  aside h1, aside h2, aside h3 {
-    color: #333; /* Darker color for headings */
-    margin-top: 1rem;
-  }
-  
-  /* For links in the sidebar, you may want to add some styling as well */
-  aside a {
-    color: #007bff; /* Standard link color */
-    text-decoration: none; /* Removes underline from links */
-  }
-  
-  aside a:hover {
-    text-decoration: underline; /* Adds underline on hover for links */
-  }
-  
-  /* You can also style paragraphs if needed */
-  aside p {
-    margin-bottom: 1rem; /* Space between paragraphs */
-  }
-  
+main {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-container {
+    margin-top: 5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #464646;
+    max-width: 100%;
+    line-height: normal;
+}
+
+.project-container a {
+  color: #333;
+  text-decoration: none;
+}
+.project-container p {
+  color: #333;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.writing-container {
+  margin-top: 5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #464646;
+  max-width: 100%;
+  line-height: normal;
+}
+
+.writing-container a {
+color: #333;
+text-decoration: none;
+}
+.writing-container p {
+color: #333;
+text-decoration: none;
+font-weight: 300;
+}
+
+/* Fixed image at the bottom-right of the viewport */
+.tree-image {
+  width: 100px;
+  height: auto;
+  position: fixed;
+  right: 200px;
+  bottom: 10px;
+  z-index: 10;
+}
+
+/* Sidebar styles */
+aside {
+  margin-top: 5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #464646;
+  line-height: 1.4;
+  max-width: 100%;
+}
+
+aside h1, aside h2, aside h3 {
+  color: #333;
+  margin-top: 1rem;
+}
+
+aside a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+aside a:hover {
+  text-decoration: underline;
+}
+
+aside p {
+  margin-bottom: 1rem;
+}
+
 /* Navigation bar styling */
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* This separates the logo and the links */
-    padding: 1rem;
-    background-color: transparent; /* Remove the background color */
-  }
-  
-  /* Styling for the 'Elliot Waxman' link */
-  nav .home-link {
-    text-decoration: none;
-    color: #333; /* Dark grey text */
-    font-weight: bold;
-  }
-  
-  /* Container for the rest of the navigation links */
-  .nav-links {
-    display: flex;
-    justify-content: center; /* Center the navigation links */
-    flex-grow: 1; /* Allows the container to take up available space */
-  }
-  
-  /* Navigation link styling */
-  .nav-links a {
-    text-decoration: none;
-    color: #333; /* Dark grey text */
-    padding: 0.5rem 1rem;
-    margin: 0 0.5rem;
-    background-color: transparent;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-  }
-  
-  /* Hover and active state styling */
-  .nav-links a:hover,
-  .nav-links a.active {
-    color: #007bff; /* Blue text for active/hover state */
-    background-color: transparent;
-  }
+  width: 100%;
+  margin-left: 30%;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: transparent;
+}
 
-  /* Highlights container styles */
+/* Home link styles */
+nav .home-link {
+  font-size: 1.5em;
+  text-decoration: none;
+  border-left: 2px solid rgb(0, 0, 255);
+  border-right: 2px solid rgb(0, 0, 255);
+  color: #333;
+  font-weight: bold;
+}
+
+/* Navigation links container */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  font-weight: bold;
+}
+
+/* Navigation link styles */
+nav a {
+  border-left: 1px solid rgb(0, 0, 255);
+  border-right: 1px solid rgb(0, 0, 255);
+  padding: 0 20px;
+}
+
+/* Link state styles */
+nav a:link, 
+nav a:visited, 
+nav a:hover, 
+nav a:active, 
+nav a:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-links a:first-child {
+border-left: none;
+}
+
+.nav-links a:last-child {
+  border-right: none;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: transparent;
+}
+
+/* Highlights container styles */
 .highlights-container {
-  display: grid; /* Using grid layout for better control */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates as many columns as can fit, with a minimum width of 300px */
-  gap: 1rem; /* Space between grid items */
-  padding: 1rem; /* Padding around the entire container */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
 }
 
-/* Individual highlight box styles */
+/* Individual highlight styles */
 .highlight-box {
-  background-color: #f9f9f9; /* Light grey background */
-  border: 1px solid #ddd; /* Grey border */
-  border-radius: 8px; /* Rounded corners */
-  padding: 1.5rem; /* Padding inside the box */
-  margin-bottom: 1rem; /* Space between boxes, if they stack vertically */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: box-shadow 0.3s ease; /* Transition for box shadow on hover */
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
 }
 
-/* Highlight title styles */
 .highlight-box h3 {
-  color: #333; /* Dark grey text */
-  margin-bottom: 0.5rem; /* Space between title and content */
+  color: #333;
+  margin-bottom: 0.5rem;
 }
 
-/* Highlight author/source styles */
 .highlight-box p {
-  color: #666; /* Lighter grey text */
-  margin-bottom: 1rem; /* Space between source and link */
+  color: #666;
+  margin-bottom: 1rem;
 }
 
-/* Styles for the 'Read Article' link */
 .highlight-box a {
-  text-decoration: none; /* Remove underline */
-  color: #007bff; /* Theme color for links */
-  background-color: transparent; /* No background color */
-  padding: 0.5rem 1rem; /* Padding around the link for better touch targets */
-  border-radius: 4px; /* Rounded corners for the link */
-  transition: background-color 0.3s ease; /* Transition for background color on hover */
+  text-decoration: none;
+  color: #007bff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 

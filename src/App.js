@@ -3,7 +3,7 @@ import React from 'react';
 import './styles.css';
 import MainLayout from './MainLayout';
 import Projects from './Projects'
-import Contact from './Contact';
+// import Contact from './Contact';
 import HomePage from './HomePage';
 import Writing from './Writing';
 import BookShelf from './BookShelf';
@@ -18,7 +18,7 @@ const App = () => (
         <Route path='/Projects' element= {<Projects />}/>
         <Route path='/BookShelf' element= {<BookShelf />}/>
         <Route path='/Writing' element= {<Writing />}/>
-        <Route path='/Contact' element= {<Contact />}/>
+        {/* <Route path='/Contact' element= {<Contact />}/> */}
         {/* other routes */}
       </Routes>
     </MainLayout>

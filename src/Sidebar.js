@@ -2,8 +2,11 @@
 
 const Sidebar = () => (
     <aside>
-      <p>Hi, I’m Elliot.
-I’m a proud New Yorker living in Brooklyn with my girlfriend, Tatiana. I enjoy reading about Biology, economics, neuroscience, and philosophy and writing about emergent phenomena of modern tech. I also like going to stand up comedy and doing action sports (surfing, snowboarding, rock climbing.) I work in product analytics and learn about genetics in the evenings. </p>
+      <p>Hi, I’m Elliot.</p>
+      <p> 🏡 Brooklyn, NY </p>
+      <p> 🧑🏻‍💻 Technical product management</p>
+      <p> 📖 Genomics, Economics, Philosophy</p>
+      <p> 🖊 Policy implications of emerging tech</p>
     </aside>
   );
   
