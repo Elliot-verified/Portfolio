@@ -2,19 +2,15 @@ import React, { useState, useEffect } from 'react';
 
 function Highlights() {
   const [highlights, setHighlights] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true); // Added loading state
 
   useEffect(() => {
     fetch('/api/readwise')
       .then(response => response.json())
       .then(data => {
-        console.log('Data fetched from /api/readwise:', data);
-        if (data && data.results) {
-          // Assuming 'data.results' is an array and there's a 'created_at' field to sort by
-          const sortedHighlights = data.results
-            .sort((a, b) => new Date(b.created_at) - new Date(a.created_at)) // Sort by date, newest first
-            .slice(0, 20); // Get only the last 20 highlights
-          setHighlights(sortedHighlights);
+        console.log('Data fetched from /api/readwise:', data); // Log the data
+        if (data && data.results) { // Check if 'results' is in the data
+          setHighlights(data.results);
         } else {
           console.error('Unexpected data structure:', data);
         }
@@ -22,11 +18,11 @@ function Highlights() {
       .catch(error => {
         console.error('Error fetching data: ', error);
       })
-      .finally(() => setIsLoading(false));
+      .finally(() => setIsLoading(false)); // Update loading state
   }, []);
 
   if (isLoading) {
-    return <div>Loading highlights...</div>;
+    return <div>Loading highlights...</div>; // Display loading message
   }
 
   return (
@@ -44,6 +40,7 @@ function Highlights() {
       )}
     </div>
   );
+  
 }
 
 export default Highlights;
