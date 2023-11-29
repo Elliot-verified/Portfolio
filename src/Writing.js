@@ -6,9 +6,9 @@ const Writing = () => (
     <div>        
         <div className="writing-container">
             <h2>What I've Written</h2>
-            <iframe src="https://elliotwaxman.substack.com/embed" width="auto" height="auto" frameborder="0" ></iframe>
+            
                 {/* Project 1 */}
-                <a href="https://link-to-your-first-project.com" target="_blank" rel="noopener noreferrer">
+                <a href="../public/AuditingMisinformation.pdf" target="_blank" rel="noopener noreferrer">
                     <h4>Project 1 Title</h4>
                     <p>Description of Project 1: ;aslkdjfas;dlkfjsa;dlkjfLorem ipsym foapsdjkfplaskdjflsadkjfasdlkfjalksdjflkadsjflkasdjflkaj</p>
                 </a>
@@ -24,6 +24,7 @@ const Writing = () => (
                     <h4>Project 3 Title</h4>
                     <p>Description of Project 1: ;aslkdjfas;dlkfjsa;dlkjfLorem ipsym foapsdjkfplaskdjflsadkjfasdlkfjalksdjflkadsjflkasdjflkaj</p>
                 </a>
+                <iframe src="https://elliotwaxman.substack.com/embed" width="auto" height="auto" frameborder="0" ></iframe>
         </div>
         <Gif />
     </div>
