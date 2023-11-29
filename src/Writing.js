@@ -8,6 +8,10 @@ const Writing = () => (
             <h2>What I've Written</h2>
             
                 {/* Project 1 */}
+                <a href="https://elliotwaxman.substack.com/p/serial-killers-fbi-dna-tracking-and?r=fafk3">
+                    <h4>Serial Killers, FBI DNA Tracking, and Scientific Methods</h4>
+                    <p>A brief history of CODIS and US government's approach to DNA-driven law enforcement</p>
+                </a>
                 <a href="https://open.substack.com/pub/elliotwaxman/p/automated-hiring-and-societies-of?r=fafk3&utm_campaign=post&utm_medium=web">
                     <h4>Automated Hiring and Societies of Control</h4>
                     <p>Short article noting the growth and regulation of automated employment decision tools</p>
