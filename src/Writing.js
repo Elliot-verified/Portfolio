@@ -5,7 +5,7 @@ import Gif from "./Gif";
 const Writing = () => (
     <div>        
         <div className="writing-container">
-            <h2>What I've Written</h2>
+            <h2>Writing</h2>
             
                 {/* Project 1 */}
                 <a href="https://elliotwaxman.substack.com/p/serial-killers-fbi-dna-tracking-and?r=fafk3">
@@ -28,7 +28,7 @@ const Writing = () => (
                     <h4>Who Owns AI-Generated Content?</h4>
                     <p>Art, copyright infringement, and redistribution of value with GAI</p>
                 </a>
-                <iframe src="https://elliotwaxman.substack.com/embed" width="auto" height="auto" frameborder="0" ></iframe>
+                <iframe src="https://elliotwaxman.substack.com/embed" frameborder="0"></iframe>
         </div>
         <Gif />
     </div>

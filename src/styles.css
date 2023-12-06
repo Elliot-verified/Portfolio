@@ -37,13 +37,19 @@ main {
   text-decoration: none;
   font-weight: 300;
 }
+/* WRITING CONTAINER SECTION */
+/* WRITING CONTAINER SECTION */
+/* WRITING CONTAINER SECTION */
 
 .writing-container {
+  flex-direction: column; /* Aligns children in a vertical column */
+  align-items: center; /* Centers children horizontally in the container */
+  justify-content: center; /* Centers children vertically in the container */
   margin-top: 5rem;
   font-size: 1rem;
   font-weight: bold;
   color: #464646;
-  max-width: 100%;
+  max-width: 700px;
   line-height: normal;
 }
 
@@ -55,6 +61,15 @@ text-decoration: none;
 color: #333;
 text-decoration: none;
 font-weight: 300;
+}
+
+.writing-container iframe {
+  width:"auto"; 
+  height:"auto"; 
+  /* border-width: 2px;
+  border-color: #007bff; */
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 /* Fixed image at the bottom-right of the viewport */
