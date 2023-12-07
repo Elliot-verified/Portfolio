@@ -3,7 +3,7 @@ import Gif from "./Gif";
 const Projects = () => (
     <div>        
         <div className="project-container">
-            <h2>What I've Built</h2>
+            <h2>Projects</h2>
                 {/* Project 1 */}
                 <a href="https://link-to-your-first-project.com" target="_blank" rel="noopener noreferrer">
                     <h4>Project 1 Title</h4>
