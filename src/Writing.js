@@ -28,7 +28,6 @@ const Writing = () => (
                     <h4>Who Owns AI-Generated Content?</h4>
                     <p>Art, copyright infringement, and redistribution of value with GAI</p>
                 </a>
-                <iframe src="https://elliotwaxman.substack.com/embed" frameborder="0"></iframe>
         </div>
         <Gif />
     </div>

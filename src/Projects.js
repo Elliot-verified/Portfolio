@@ -1,31 +1,36 @@
 import Gif from "./Gif";
 
 const Projects = () => (
-    <div>        
+    <div>
         <div className="project-container">
             <h2>Projects</h2>
-                {/* Project 1 */}
-                <a href="https://link-to-your-first-project.com" target="_blank" rel="noopener noreferrer">
-                    <h4>Project 1 Title</h4>
-                    <p>Description of Project 1: ;aslkdjfas;dlkfjsa;dlkjfLorem ipsym foapsdjkfplaskdjflsadkjfasdlkfjalksdjflkadsjflkasdjflkaj</p>
-                </a>
 
-                {/* Project 2 */}
-                <a href="https://link-to-your-second-project.com" target="_blank" rel="noopener noreferrer">
-                    <h4>Project 2 Title</h4>
-                    <p>Description of Project 1: ;aslkdjfas;dlkfjsa;dlkjfLorem ipsym foapsdjkfplaskdjflsadkjfasdlkfjalksdjflkadsjflkasdjflkaj</p>
-                </a>
+            {/* Misto */}
+            <a href="https://substack.com/home/post/p-160624379" target="_blank" rel="noopener noreferrer">
+                <h4>Misto <span className="project-status">— Continuing May '26</span></h4>
+                <p>
+                    Bioremediation for nuclear waste — genetically engineering microbes to break down radionuclides in contaminated soil and water. Currently paused; picking it back up in May 2026.
+                </p>
+            </a>
 
-                {/* Project 3 */}
-                <a href="https://link-to-your-third-project.com" target="_blank" rel="noopener noreferrer">
-                    <h4>Project 3 Title</h4>
-                    <p>Description of Project 1: ;aslkdjfas;dlkfjsa;dlkjfLorem ipsym foapsdjkfplaskdjflsadkjfasdlkfjalksdjflkadsjflkasdjflkaj</p>
-                </a>
+            {/* Generative protein app */}
+            <div className="project-static">
+                <h4>Generative Protein App</h4>
+                <p>
+                    A tool for designing novel proteins to transform microbes for synthetic biology applications, built on top of generative protein models.
+                </p>
+            </div>
+
+            {/* Awake */}
+            <div className="project-static">
+                <h4>Awake <span className="project-status">— Sunset</span></h4>
+                <p>
+                    A collective shareholder engagement platform — pooling retail investors to vote together on issues that matter.
+                </p>
+            </div>
         </div>
         <Gif />
     </div>
 );
 
 export default Projects;
-
-

@@ -37,6 +37,19 @@ main {
   color: #333;
   text-decoration: none;
   font-weight: 300;
+  margin-top: 0.4rem;
+}
+.project-container h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+.project-static {
+  color: #333;
+}
+.project-status {
+  font-weight: 400;
+  color: #777;
+  font-size: 0.9em;
 }
 /* WRITING CONTAINER SECTION */
 /* WRITING CONTAINER SECTION */
@@ -86,10 +99,10 @@ font-weight: 300;
 /* Sidebar styles */
 aside {
   margin-top: 5rem;
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-size: 1.1rem;
+  font-weight: 400;
   color: #464646;
-  line-height: 1.4;
+  line-height: 1.6;
   max-width: 100%;
 }
 
@@ -206,3 +219,55 @@ border-left: none;
   transition: background-color 0.3s ease;
 }
 
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .main-layout {
+    padding: 0 1.25rem;
+  }
+
+  .content-area {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    padding: 0;
+  }
+
+  nav {
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem 0;
+  }
+
+  nav .home-link {
+    font-size: 1.25em;
+  }
+
+  .nav-links {
+    flex-grow: 0;
+  }
+
+  nav a {
+    padding: 0 12px;
+  }
+
+  aside {
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+
+  .project-container,
+  .writing-container {
+    margin-top: 3rem;
+    padding: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .tree-image {
+    width: 60px;
+    right: 10px;
+  }
+}
