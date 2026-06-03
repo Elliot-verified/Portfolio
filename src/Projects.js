@@ -28,6 +28,22 @@ const Projects = () => (
                     A collective shareholder engagement platform — pooling retail investors to vote together on issues that matter.
                 </p>
             </div>
+
+            {/* Plasmid Optimizer */}
+            <a href="https://www.plasmidoptimizer.com" target="_blank" rel="noopener noreferrer">
+                <h4>Plasmid Optimizer</h4>
+                <p>
+                    A web tool for optimizing plasmid DNA sequences — codon usage, GC content, and sequence cleanup for more reliable expression.
+                </p>
+            </a>
+
+            {/* Lab Notes */}
+            <a href="https://lab-notes-iircoc24r-elliot-waxmans-projects.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <h4>Lab Notes</h4>
+                <p>
+                    A lightweight app for capturing and organizing lab notes and experiments.
+                </p>
+            </a>
         </div>
         <Gif />
     </div>
