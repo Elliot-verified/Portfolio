@@ -44,6 +44,14 @@ const Projects = () => (
                     A lightweight app for capturing and organizing lab notes and experiments.
                 </p>
             </a>
+
+            {/* Handwriting Font Generator */}
+            <a href="https://fontcreator-eta.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <h4>Handwriting Font Generator</h4>
+                <p>
+                    A web tool that turns your handwriting into a custom font — upload a sample of your handwritten characters and generate a personal typeface you can use anywhere.
+                </p>
+            </a>
         </div>
         <Gif />
     </div>
