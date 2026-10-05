@@ -5,35 +5,19 @@ const Projects = () => (
         <div className="project-container">
             <h2>Projects</h2>
 
-            {/* Misto */}
-            <a href="https://substack.com/home/post/p-160624379" target="_blank" rel="noopener noreferrer">
-                <h4>Misto <span className="project-status">— Continuing May '26</span></h4>
-                <p>
-                    Bioremediation for nuclear waste — genetically engineering microbes to break down radionuclides in contaminated soil and water. Currently paused; picking it back up in May 2026.
-                </p>
-            </a>
-
-            {/* Awake */}
+            {/* Learning tools for data engineers */}
             <div className="project-static">
-                <h4>Awake <span className="project-status">— Sunset</span></h4>
+                <h4>Learning Tools for Data Engineers <span className="project-status">— Started September 2026</span></h4>
                 <p>
-                    A collective shareholder engagement platform — pooling retail investors to vote together on issues that matter.
+                    Currently building learning tools for data engineers. More to come.
                 </p>
             </div>
 
-            {/* Plasmid Optimizer */}
-            <a href="https://www.plasmidoptimizer.com" target="_blank" rel="noopener noreferrer">
-                <h4>Plasmid Optimizer <span className="project-status">— April 2026</span></h4>
+            {/* Book Vector */}
+            <a href="https://book-vector.vercel.app" target="_blank" rel="noopener noreferrer">
+                <h4>Book Vector <span className="project-status">— July 2026</span></h4>
                 <p>
-                    A web tool for optimizing plasmid DNA sequences — codon usage, GC content, and sequence cleanup for more reliable expression.
-                </p>
-            </a>
-
-            {/* Lab Notes */}
-            <a href="https://lab-notes-iircoc24r-elliot-waxmans-projects.vercel.app/" target="_blank" rel="noopener noreferrer">
-                <h4>Lab Notes <span className="project-status">— May 2026</span></h4>
-                <p>
-                    A lightweight app for capturing and organizing lab notes and experiments.
+                    An interactive galaxy of books mapped by semantic similarity — search any title and explore its nearest neighbors and hyperniche genres in 3D.
                 </p>
             </a>
 
@@ -45,13 +29,37 @@ const Projects = () => (
                 </p>
             </a>
 
-            {/* Book Vector */}
-            <a href="https://book-vector.vercel.app" target="_blank" rel="noopener noreferrer">
-                <h4>Book Vector <span className="project-status">— July 2026</span></h4>
+            {/* Lab Notes */}
+            <a href="https://lab-notes-iircoc24r-elliot-waxmans-projects.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <h4>Lab Notes <span className="project-status">— May 2026</span></h4>
                 <p>
-                    An interactive galaxy of books mapped by semantic similarity — search any title and explore its nearest neighbors and hyperniche genres in 3D.
+                    A lightweight app for capturing and organizing lab notes and experiments.
                 </p>
             </a>
+
+            {/* Misto */}
+            <a href="https://substack.com/home/post/p-160624379" target="_blank" rel="noopener noreferrer">
+                <h4>Misto <span className="project-status">— Sunset May 2026</span></h4>
+                <p>
+                    Bioremediation for nuclear waste — genetically engineering microbes to break down radionuclides in contaminated soil and water. Sunset in May 2026.
+                </p>
+            </a>
+
+            {/* Plasmid Optimizer */}
+            <a href="https://www.plasmidoptimizer.com" target="_blank" rel="noopener noreferrer">
+                <h4>Plasmid Optimizer <span className="project-status">— April 2026</span></h4>
+                <p>
+                    A web tool for optimizing plasmid DNA sequences — codon usage, GC content, and sequence cleanup for more reliable expression.
+                </p>
+            </a>
+
+            {/* Awake */}
+            <div className="project-static">
+                <h4>Awake <span className="project-status">— Sunset</span></h4>
+                <p>
+                    A collective shareholder engagement platform — pooling retail investors to vote together on issues that matter.
+                </p>
+            </div>
         </div>
         <Gif />
     </div>
