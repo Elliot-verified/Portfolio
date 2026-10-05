@@ -52,6 +52,14 @@ const Projects = () => (
                     A web tool that turns your handwriting into a custom font — upload a sample of your handwritten characters and generate a personal typeface you can use anywhere.
                 </p>
             </a>
+
+            {/* Book Vector */}
+            <a href="https://book-vector.vercel.app" target="_blank" rel="noopener noreferrer">
+                <h4>Book Vector</h4>
+                <p>
+                    An interactive galaxy of books mapped by semantic similarity — search any title and explore its nearest neighbors and hyperniche genres in 3D.
+                </p>
+            </a>
         </div>
         <Gif />
     </div>

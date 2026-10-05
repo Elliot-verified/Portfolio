@@ -2,13 +2,12 @@
 
 module.exports = async (req, res) => {
     const READWISE_TOKEN = process.env.READWISE_TOKEN; // Set in Vercel environment variables
-    const oneWeekAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString();
-    
-    const response = await fetch(`https://readwise.io/api/v2/export/?updatedAfter=${oneWeekAgo}`, {
+    const threeMonthsAgo = new Date(Date.now() - 90 * 24 * 60 * 60 * 1000).toISOString();
+
+    const response = await fetch(`https://readwise.io/api/v2/export/?updatedAfter=${threeMonthsAgo}`, {
       method: 'GET',
       headers: {
         Authorization: `Token ${READWISE_TOKEN}`,
-        // Authorization: 'Token 8RMFBvy4QmjhMDfgqgx5evcJIJPBTqd3drfEU0SzK01u8xh9Cr'
       },
     });
     const data = await response.json();
