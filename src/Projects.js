@@ -13,14 +13,6 @@ const Projects = () => (
                 </p>
             </a>
 
-            {/* Generative protein app */}
-            <div className="project-static">
-                <h4>Generative Protein App</h4>
-                <p>
-                    A tool for designing novel proteins to transform microbes for synthetic biology applications, built on top of generative protein models.
-                </p>
-            </div>
-
             {/* Awake */}
             <div className="project-static">
                 <h4>Awake <span className="project-status">— Sunset</span></h4>
@@ -31,7 +23,7 @@ const Projects = () => (
 
             {/* Plasmid Optimizer */}
             <a href="https://www.plasmidoptimizer.com" target="_blank" rel="noopener noreferrer">
-                <h4>Plasmid Optimizer</h4>
+                <h4>Plasmid Optimizer <span className="project-status">— April 2026</span></h4>
                 <p>
                     A web tool for optimizing plasmid DNA sequences — codon usage, GC content, and sequence cleanup for more reliable expression.
                 </p>
@@ -39,7 +31,7 @@ const Projects = () => (
 
             {/* Lab Notes */}
             <a href="https://lab-notes-iircoc24r-elliot-waxmans-projects.vercel.app/" target="_blank" rel="noopener noreferrer">
-                <h4>Lab Notes</h4>
+                <h4>Lab Notes <span className="project-status">— May 2026</span></h4>
                 <p>
                     A lightweight app for capturing and organizing lab notes and experiments.
                 </p>
@@ -47,7 +39,7 @@ const Projects = () => (
 
             {/* Handwriting Font Generator */}
             <a href="https://fontcreator-eta.vercel.app/" target="_blank" rel="noopener noreferrer">
-                <h4>Handwriting Font Generator</h4>
+                <h4>Handwriting Font Generator <span className="project-status">— June 2026</span></h4>
                 <p>
                     A web tool that turns your handwriting into a custom font — upload a sample of your handwritten characters and generate a personal typeface you can use anywhere.
                 </p>
@@ -55,7 +47,7 @@ const Projects = () => (
 
             {/* Book Vector */}
             <a href="https://book-vector.vercel.app" target="_blank" rel="noopener noreferrer">
-                <h4>Book Vector</h4>
+                <h4>Book Vector <span className="project-status">— July 2026</span></h4>
                 <p>
                     An interactive galaxy of books mapped by semantic similarity — search any title and explore its nearest neighbors and hyperniche genres in 3D.
                 </p>
